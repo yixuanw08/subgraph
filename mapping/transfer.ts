@@ -6,12 +6,13 @@ import { Transfer } from "../generated/Transfer/USDT";
 const BI_ONE = BigInt.fromI32(1);
 export function handleTransfer(event: Transfer): void {
   let transfer = Exchange.load(event.transaction.hash.toHex());
-  if (transfer == null) transfer = new Exchange(event.transaction.hash.toHex());
+  if (transfer == null) transfer = new Exchange(event.transaction.hash.toHex());//if not existed create a new
 
   transfer.block = event.block.number;
   transfer.from = event.params.from.toHex();
   transfer.to = event.params.to.toHex();
   transfer.amount = event.params.value;
+  // transfer.timestamp = event.params.
 
   transfer.save();
 }

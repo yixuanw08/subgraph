@@ -1,6 +1,6 @@
 specVersion: 0.0.2
 description: Token Subgraph API
-repository: https://github.com/zikyfranky/usdt-subgraph
+repository: https://github.com/yixuanw08/subgraph
 schema:
   file: ./token.graphql
 dataSources:
@@ -13,7 +13,7 @@ dataSources:
       startBlock: 4634748
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.4
+      apiVersion: 0.0.5
       language: wasm/assemblyscript
       file: ./mapping/transfer.ts
       entities:
