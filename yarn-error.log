@@ -1,0 +1,50 @@
+Arguments: 
+  /usr/local/bin/node /Users/yixuanwang/.yarn/bin/yarn.js run deploy bf627a1372b2466ea3fbd571f142c3bc
+
+PATH: 
+  /Users/yixuanwang/.yarn/bin:/Users/yixuanwang/.config/yarn/global/node_modules/.bin:/Users/yixuanwang/.local/share/solana/install/active_release/bin:/Users/yixuanwang/.cargo/bin:/Users/yixuanwang/opt/anaconda3/bin:/Users/yixuanwang/opt/anaconda3/condabin:/usr/local/bin:/usr/local/sbin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/go/bin:/Library/Apple/usr/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/yixuanwang/.local/bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  14.17.6
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/yixuanwang/github/subgraph/subgraph/package.json: Unexpected token 
+   in JSON at position 243
+      at JSON.parse (<anonymous>)
+      at /Users/yixuanwang/.yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/Users/yixuanwang/.yarn/lib/cli.js:310:30)
+      at /Users/yixuanwang/.yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "js",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "codegen": "graph codegen ./token.yaml",
+      "deploy": "graph deploy --product hosted-service --node https://api.thegraph.com/deploy/ -ipfs /
+      https: //api.thegraph.com/ipfs/ yixuanw08/usdt-transfers ./token.yaml --access-token"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@graphprotocol/graph-cli": "0.25.3",
+      "@graphprotocol/graph-ts": "^0.24.1",
+      "typescript": "^4.5.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

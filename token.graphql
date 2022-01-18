@@ -13,7 +13,4 @@ type Exchange @entity {
 
   # Amount of Tokens
   amount: BigInt!
-
-  #Timestamp
-  timestamp: BigInt!
 }
