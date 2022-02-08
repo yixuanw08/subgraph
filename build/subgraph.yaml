@@ -8,7 +8,7 @@ dataSources:
     name: Transfer
     network: mainnet
     source:
-      address: "0x611cde65dea90918c0078ac0400a72b0d25b9bb1"
+      address: "0xD533a949740bb3306d119CC777fa900bA034cd52"
       abi: USDT
       startBlock: 12757988
     mapping:

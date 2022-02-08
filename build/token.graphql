@@ -1,4 +1,4 @@
-type Exchange @entity {
+type User @entity {
   # tx hash
   id: ID!
 
@@ -14,9 +14,3 @@ type Exchange @entity {
   # Amount of Tokens
   amount: BigInt!
 }
-
-# type User @entity {
-#   id: ID!
-#   name: String!
-#   organizations: [UserOrganization!] @derivedFrom(field: "organization")
-# }
