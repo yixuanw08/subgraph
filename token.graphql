@@ -1,16 +1,23 @@
-type Exchange @entity {
-  # tx hash
+# type Transfer @entity {
+#   # tx hash
+#   id: ID!
+
+#   # Block number
+#   block: BigInt!
+
+#   # Sender
+#   from: String!
+
+#   # Receiver
+#   to: String!
+
+#   # Amount of Tokens
+#   amount: BigInt!
+# }
+
+   
+type User @entity {
   id: ID!
-
-  # Block number
-  block: BigInt!
-
-  # Sender
-  from: String!
-
-  # Receiver
-  to: String!
-
-  # Amount of Tokens
-  amount: BigInt!
+  totalTransfers: BigInt!
+  totalAmount: BigInt!
 }

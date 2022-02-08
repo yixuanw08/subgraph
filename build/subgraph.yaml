@@ -8,9 +8,9 @@ dataSources:
     name: Transfer
     network: mainnet
     source:
-      address: "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      address: "0x611cde65dea90918c0078ac0400a72b0d25b9bb1"
       abi: USDT
-      startBlock: 4634748
+      startBlock: 12757988
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
