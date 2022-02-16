@@ -9,18 +9,18 @@ dataSources:
     network: mainnet
     source:
       address: "0xba5ebaf3fc1fcca67147050bf80462393814e54b"
-      abi: USDT
-      startBlock: 12757988
+      abi: ERC20
+      startBlock: 13757988
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
       language: wasm/assemblyscript
       file: ./mapping/transfer.ts
       entities:
-        - Transfer
+        - User
       abis:
-        - name: USDT
-          file: ./abis/USDT.json
+        - name: ERC20
+          file: ./abis/ERC20.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer

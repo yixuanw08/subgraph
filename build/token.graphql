@@ -14,3 +14,14 @@ type User @entity {
   # Amount of Tokens
   amount: BigInt!
 }
+
+# type Transaction @entity {
+#   id: ID! # txn hash
+#   blockNumber: BigInt!
+#   timestamp: BigInt!
+#   # This is not the reverse of Mint.transaction; it is only used to
+#   # track incomplete mints (similar for burns and swaps)
+#   mints: [Mint]!
+#   burns: [Burn]!
+#   swaps: [Swap]!
+# }
